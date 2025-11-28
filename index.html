@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<header id="hero">
+		<video autoplay loop muted id="video">
+			<source src="video/background_video.mp4" type="video/mp4">
+				Your borwser doesnot support the video tag.
+		</video>
+		<nav class="navbar">
+			<span class="logo">My Portfolio</span>
+			<ul class="nav-links">
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
+				<!-- Hamburger icon can be a simple text or SVG -->
+				☰
+			</button>
+		</nav>
+		<div class="hero-content">
+			<img src="images/myphoto.jpg">
+			<h1>Binod Magar</h1>
+			<p>Frontend Developer & UI/UX Enthusiast</p>
+		</div>
+	</header>
+
+	<section id="about">
+		<h2>About me</h2>
+		<p>
+			I am a passionate web developer skilled in front-end and back-end technologies. I love creating websites, apps, and user-friendly designs.
+		</p>
+	</section>
+	<section id="skills">
+		<h2>Skills</h2>
+		<ul>
+            <li>HTML / CSS / JavaScript</li>
+            <li>React / Node.js</li>
+            <li>Python / Java</li>
+            <li>UI/UX Design</li>
+        </ul>
+	</section>
+
+	<section id="projects">
+		<h2>Projects</h2>
+		<div class="project-card">
+			<h2>Project1</h2>
+			<img src="images\amazon.jpg">
+            <p>It is the frontend of Amazon online shoping website.</p>
+		</div>
+		<div class="project-card">
+			<h2>Project2</h2>
+			<img src="images\expense income.jpg">
+            <p>It is the website for expense and income record.</p>
+		</div>
+		<div class="project-card">
+			<h2>Project3</h2>
+			<img src="images\weather.png">
+            <p>It is the weather showing website.</p>
+		</div>
+	</section>
+
+	<section id="contact">
+		<h2>Conatct Form</h2>
+		<form id="form">
+			<label for="Name">Name: </label>
+			<input type="text" name="name" placeholder="Enter your name">
+
+			<label for="Email">Email: </label>
+			<input type="email" name="email" placeholder="Enter your email">
+
+			<label for="message">Message:</label>
+			<input type="text" name="message" placeholder="Write your message">
+
+			<button type="submit">Submit</button>
+		</form>
+	</section>
+
+	<footer>
+		<p>&copy 2025 Binod Magar. All Rights Reserved.</p>
+	</footer>
+	
+<script src="script.js"></script>
+
+</body>
+</html>
