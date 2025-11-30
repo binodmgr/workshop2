@@ -27,8 +27,10 @@ navLinks.querySelectorAll('a').forEach(link => {
 });
 
 const contactForm = document.getElementById('form');
+const messageDiv = document.getElementById('form-message');
 
- if(contactForm){
+
+ if(contactForm && messageDiv){
     contactForm.addEventListener('submit',function(event){
         //Stop the browser from submitting the form and refreshing the page
         event.preventDefault();
@@ -39,9 +41,11 @@ const contactForm = document.getElementById('form');
         const message = contactForm.querySelector("input[name='message']").value;
 
         if (name === "" || email === "" || message === "") {
-            alert("Please fill out all fields.");
+            messageDiv.textContent = "Please fill out all fields.";
+            messageDiv.style.color = "red";
         } else {
-            alert("Form submitted successfully!");
+            messageDiv.textContent = "Thank you for your message! I will be in touch shortly";
+            messageDiv.style.color = "green";
             contactForm.reset();  //Clear the form fields
         }
     });
